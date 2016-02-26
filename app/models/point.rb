@@ -2,7 +2,8 @@ class Point
   attr_accessor :longitude, :latitude
 
   def initialize keys={}
-    keys={} if keys.nil?
+    return nil if keys.nil? 
+    #keys={} if keys.nil?
     if keys[:coordinates].nil?
       @latitude = keys[:lat]
       @longitude = keys[:lng]
