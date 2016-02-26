@@ -107,4 +107,17 @@ class Place
     view=view.collection.find.aggregate(pipeline)
     view.to_a.map { |h| h[:_id].to_s }
   end
+  
+  def self.create_indexes
+    self.collection.indexes.create_one({:"geometry.geolocation"=>Mongo::Index::GEO2DSPHERE})
+  end
+  def self.remove_indexes
+    #indexes = self.collection.indexes.map {|r| r[:name] }
+    self.collection.indexes.drop_one("geometry.geolocation_2dsphere")
+  end
+  def self.near(point, max_meters=:unlimited)
+    places=[]
+     
+  end
 end
+

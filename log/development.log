@@ -90,3 +90,8 @@ MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate
 MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.17601s
 MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$match=>{:$and=>[{:"address_components.types"=>"country"}, {:"address_components.short_name"=>"GB"}]}}, {:$project=>{:_id=>1}}], "cursor"=>{}}
 MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.001s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.createIndexes | STARTED | {"createIndexes"=>"places", "indexes"=>[{:key=>{:"geometry.geolocation"=>"2dsphere"}, :name=>"geometry.geolocation_2dsphere"}]}
+MONGODB | localhost:27017 | places_development.createIndexes | SUCCEEDED | 0.567033s
+MONGODB | localhost:27017 | places_development.listIndexes | STARTED | {"listIndexes"=>"places", "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.listIndexes | SUCCEEDED | 0.060004s
