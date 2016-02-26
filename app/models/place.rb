@@ -1,0 +1,92 @@
+
+class Place
+  # include ActiveModel::Model
+  attr_accessor :id, :formatted_address, :location, :address_components
+
+  def self.mongo_client
+    Mongoid::Clients.default
+  end
+  def self.collection
+    self.mongo_client[:places]
+  end
+  def self.load_all file
+    # json to hash to array
+    data=JSON.parse(file.read) if file.kind_of?(File)
+
+    # insert array to the collection
+    self.collection.insert_many(data) if !data.nil?
+  end
+
+  def initialize keys={}
+    keys = {} if keys.nil?
+    #@coll = self.class.collection
+
+    #hashがRailsのPlaceクラスから来た場合:mongodbから来た場合
+    @id = keys[:_id].nil? ? keys[:id] : keys[:_id].to_s
+
+    @address_components = []
+    acs = keys[:address_components] ||= []
+    acs.each do |ac|
+      @address_components << AddressComponent.new(ac)
+    end
+
+    @formatted_address = keys[:formatted_address]
+
+    geoloc = keys[:geometry].nil? ? nil : keys[:geometry][:geolocation]
+    @location = Point.new(geoloc)
+  end
+
+  def self.find_by_short_name short_name
+    self.collection.find(:"address_components.short_name"=>short_name)
+  end
+
+  # viewsを1行ずつ取り出してPlaceに変換。Placeの配列にして戻す。
+  def self.to_places views
+    places = []
+    views.each do |v|
+      p = Place.new(v)
+      places << p
+    end
+    return places
+  end
+
+  def self.find id
+    doc = self.collection.find(_id:BSON::ObjectId.from_string(id)).first
+    return doc.nil? ? nil : Place.new(doc)
+  end
+
+  def self.all(offset=0, limit=nil)
+    docs = self.collection.find.skip(offset)
+    docs = docs.limit(limit) if !limit.nil?
+
+    #ブロックの結果を配列にする
+    places = [] 
+    places = docs.to_a.map do |doc|
+      Place.new(doc)
+    end
+    #上と同じ
+    #places = []
+    # docs.to_a.each do |doc|
+    #   p = Place.new(doc)
+    #   places << p
+    # end
+    return places
+  end
+  
+  def destroy
+    #@coll.find(_id:BSON::ObjectId.from_string(@id)).delete_one
+    self.class.collection.find(_id:BSON::ObjectId.from_string(@id)).delete_one
+  end
+
+  def self.get_address_components(sort={}, offset=0, limit=nil)
+    sort={} if !sort.nil?
+    view=self.collection.find
+    view.aggregate([{:$unwind=>"$address_components"},
+                  {:$project=>{address_components:true,formatted_address:true,geometry:"$geometry.geolocation"}}
+                  ])
+    view.sort(sort)
+    view.skip(offset)
+    view.limit(limit) if !limit.nil?
+  end
+
+end

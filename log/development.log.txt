@@ -1,0 +1,442 @@
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.007s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.004001s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"places", "documents"=>[{"address_components"=>[{"long_name"=>"77713-77735", "short_name"=>"77713-77735", "types"=>["street_number"]}, {"long_name"=>"Dillon Road", "short_name"=>"Dillon Rd", "types"=>["route"]}, {"long_name"=>"Desert Hot Sp...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.099005s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.004s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{}, "limit"=>0}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.011001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"places", "documents"=>[{"address_components"=>[{"long_name"=>"77713-77735", "short_name"=>"77713-77735", "types"=>["street_number"]}, {"long_name"=>"Dillon Road", "short_name"=>"Dillon Rd", "types"=>["route"]}, {"long_name"=>"Desert Hot Sp...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.029002s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{}, "limit"=>0}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.006001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"places", "documents"=>[{"address_components"=>[{"long_name"=>"77713-77735", "short_name"=>"77713-77735", "types"=>["street_number"]}, {"long_name"=>"Dillon Road", "short_name"=>"Dillon Rd", "types"=>["route"]}, {"long_name"=>"Desert Hot Sp...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.030002s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"places", "documents"=>[{"address_components"=>[{"long_name"=>"77713-77735", "short_name"=>"77713-77735", "types"=>["street_number"]}, {"long_name"=>"Dillon Road", "short_name"=>"Dillon Rd", "types"=>["route"]}, {"long_name"=>"Desert Hot Sp...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.030002s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{}, "limit"=>0}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"places", "documents"=>[{"address_components"=>[{"long_name"=>"77713-77735", "short_name"=>"77713-77735", "types"=>["street_number"]}, {"long_name"=>"Dillon Road", "short_name"=>"Dillon Rd", "types"=>["route"]}, {"long_name"=>"Desert Hot Sp...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.030002s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.033002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.031002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.030002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.032002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.052003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.028002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.031002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.022001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.028002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.051003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.015001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.031002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.036002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.022001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.010001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.047003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.023001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.01s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$project=>{:_id=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.022002s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$project=>{:_id=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}, "projection"=>{:_id=>true}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.006s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.004001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}, "projection"=>{:_id=>true}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}, "projection"=>{:_id=>true}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>["CA", "US"]}, "projection"=>{:_id=>true}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>{:$in=>["CA", "US"]}}, "projection"=>{:_id=>true}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.004s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.007001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.006s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.004s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.008001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.006s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:"address_components.short_name"=>"CA"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:"address_components.short_name"=>"C222A"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:_id=>"ppp"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.006001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:_id=>"eee"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.014001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:_id=>"56c04893cdcfb52f9400009c"}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{"_id"=>BSON::ObjectId('56c04893cdcfb52f9400009c')}, "limit"=>0, "explain"=>true}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>5}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.006001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[53111453172]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>5}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[52278414184]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>5}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[55359231439]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.032001999999999996s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>8}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.007001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[55623169365]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.012s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>:unlimited}
+MONGODB | localhost:27017 | places_development.find | FAILED | no implicit conversion of Symbol into Integer | 0.006001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>10}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.022001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.036002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.031002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.033002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.032002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.011001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.011s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>10}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.024001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>4, "limit"=>3}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[54948675993]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>4, "limit"=>3}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.004s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[52678742851]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>4, "limit"=>3}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[53719304951]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.018001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.014001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.041002000000000004s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.039002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.046002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.013001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.012001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f940000b5')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.013001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.014s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009d')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.020001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.010001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('56c04893cdcfb52f9400009c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.015001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>5, "sort"=>[]}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[54933872173]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "sort"=>[]}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.014001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "sort"=>1}
+MONGODB | localhost:27017 | places_development.find | FAILED | Can't canonicalize query: BadValue sort must be object or array (17287) | 0.008s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "sort"=>1}
+MONGODB | localhost:27017 | places_development.find | FAILED | Can't canonicalize query: BadValue sort must be object or array (17287) | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "sort"=>3}
+MONGODB | localhost:27017 | places_development.find | FAILED | Can't canonicalize query: BadValue sort must be object or array (17287) | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "sort"=>""}
+MONGODB | localhost:27017 | places_development.find | FAILED | Can't canonicalize query: BadValue sort must be object or array (17287) | 0.002s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.082005s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>54345790447, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.088005s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>53588748738, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.028001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.090005s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>52997302526, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.006s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.030002s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.061003s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[52043658553]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.094006s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[54465552540]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.062004000000000004s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[55019463147]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.057003s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[53897627040]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.085005s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.051003s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | FAILED | Unrecognized pipeline stage name: 'project' (16436) | 0.008s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.084005s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[54935905924]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[52112546796]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.017001s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>52619648088, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.008001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>55591963030, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.005001s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.014001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[54465836233]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.017001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[51792174635]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.017001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[55569957615]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.015s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[53041659719]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[54269068354]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.killCursors | STARTED | {"killCursors"=>"places", "cursors"=>[54814124729]}
+MONGODB | localhost:27017 | places_development.killCursors | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>55316718857, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.016001s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>53741421357, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.004s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true, :geometry=>"geometry.geolocation"}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | FAILED | FieldPath 'geometry.geolocation' doesn't start with $ (16873) | 0.005s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true, :geometry=>"$geometry.geolocation"}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.025002s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>54283720028, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.006s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>true, :geometry=>"$geometry.geolocation"}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.023001s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>51696720758, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.006001s
