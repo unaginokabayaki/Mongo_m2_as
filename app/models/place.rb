@@ -33,7 +33,11 @@ class Place
     @formatted_address = keys[:formatted_address]
 
     geoloc = keys[:geometry].nil? ? nil : keys[:geometry][:geolocation]
+<<<<<<< HEAD
     @location = Point.new(geoloc)
+=======
+    @location = geoloc.nil? ? nil : Point.new(geoloc) 
+>>>>>>> d25f76509dad2a3256132d455bd09b0b2c9114ac
   end
 
   def self.find_by_short_name short_name
@@ -82,26 +86,41 @@ class Place
     pipeline = []
     pipeline << {:$unwind=>"$address_components"}
     pipeline << {:$project=>{:address_components=>1,:formatted_address=>1,:"geometry.geolocation"=>1}}
-    pipeline << {:$sort=>sort} if sort != {}
-    pipeline << {:$skip=>offset} 
+    pipeline << {:$sort=>sort} if sort!={}
+    pipeline << {:$skip=>offset}
     pipeline << {:$limit=>limit} if !limit.nil?
-    view=self.collection.find.aggregate(pipeline)
-    #view=self.collection.find
-    # view.aggregate([{:$unwind=>"$address_components"},
-    #               {:$project=>{address_components:1,formatted_address:1,geometry:1}},
-    #               {:$sort=>sort},
-    #               {:$skip=>offset},
-    #               ])
-    #view.sort(sort)
-    #view.skip(offset)
-    #view.limit(limit) if !limit.nil?
+    self.collection.find.aggregate(pipeline)
   end
   def self.get_country_names
+    view=self.get_address_components.view
+    
     pipeline = []
-    pipeline << {:$project=>{:_id=>0,:"address_components.long_name"=>1,:"address_components.type"=>1}}
     pipeline << {:$unwind=>"$address_components"}
-    pipeline << {:$match=>{:"address_components.type"=>1}}
-    view = self.get_address_components.view
-    view.to_a.map {|h| h[:long_name]}
+    pipeline << {:$project=>{:"address_components.long_name"=>1,:"address_components.types"=>1}}
+    pipeline << {:$match=>{:"address_components.types"=>"country"}}
+    pipeline << {:$group=>{:_id=>"$address_components.long_name"}}
+    view=view.aggregate(pipeline)
+    view.to_a.map { |h| h[:_id] }
+  end
+  def self.find_ids_by_country_code country_code
+    view=self.get_address_components.view
+    
+    pipeline = []
+    pipeline << {:$match=>{:$and=>[{:"address_components.types"=>"country"},{:"address_components.short_name"=>country_code}]}}
+    pipeline << {:$project=>{:_id=>1}}
+    view=view.collection.find.aggregate(pipeline)
+    view.to_a.map { |h| h[:_id].to_s }
+  end
+  
+  def self.create_indexes
+    self.collection.indexes.create_one({:"geometry.geolocation"=>Mongo::Index::GEO2DSPHERE})
+  end
+  def self.remove_indexes
+    #indexes = self.collection.indexes.map {|r| r[:name] }
+    self.collection.indexes.drop_one("geometry.geolocation_2dsphere")
+  end
+  def self.near(point, max_meters=:unlimited)
+    places=[]
+     
   end
 end

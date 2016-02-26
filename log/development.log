@@ -1,0 +1,97 @@
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"places", "documents"=>[{"address_components"=>[{"long_name"=>"77713-77735", "short_name"=>"77713-77735", "types"=>["street_number"]}, {"long_name"=>"Dillon Road", "short_name"=>"Dillon Rd", "types"=>["route"]}, {"long_name"=>"Desert Hot Sp...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.124007s
+MONGODB | localhost:27017 | places_development.count | STARTED | {"count"=>"places", "query"=>{}}
+MONGODB | localhost:27017 | places_development.count | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.021001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.023001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>1, :formatted_address=>1, ":geometry.geolocation"=>1}}, {:$sort=>{:_id=>-1}}, {:$skip=>48}, {:$limit=>3}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>1, :formatted_address=>1, ":geometry.geolocation"=>1}}, {:$skip=>0}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.013s
+MONGODB | localhost:27017 | places_development.getMore | STARTED | {"getMore"=>13634686626, "batchSize"=>0, "collection"=>"places"}
+MONGODB | localhost:27017 | places_development.getMore | SUCCEEDED | 0.005s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>1, :formatted_address=>1, ":geometry.geolocation"=>1}}, {:$skip=>0}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>1, :formatted_address=>1, ":geometry.geolocation"=>1}}, {:$skip=>0}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.012s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$match=>{:$and=>[{:"address_components.types"=>"country"}, {:"address_components.short_name"=>"GB"}]}}, {:$project=>{:_id=>1}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.17601s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$match=>{:$and=>[{:"address_components.types"=>"country"}, {:"address_components.short_name"=>"GB"}]}}, {:$project=>{:_id=>1}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.001s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.createIndexes | STARTED | {"createIndexes"=>"places", "indexes"=>[{:key=>{:"geometry.geolocation"=>"2dsphere"}, :name=>"geometry.geolocation_2dsphere"}]}
+MONGODB | localhost:27017 | places_development.createIndexes | SUCCEEDED | 0.567033s
+MONGODB | localhost:27017 | places_development.listIndexes | STARTED | {"listIndexes"=>"places", "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.listIndexes | SUCCEEDED | 0.060004s
