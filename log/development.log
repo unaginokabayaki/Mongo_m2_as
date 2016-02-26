@@ -63,3 +63,30 @@ MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.003s
 MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>1, :formatted_address=>1, ":geometry.geolocation"=>1}}, {:$skip=>0}], "cursor"=>{}}
 MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.012s
 MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | An established connection was aborted by the software in your host machine.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2)
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$match=>{:$and=>[{:"address_components.types"=>"country"}, {:"address_components.short_name"=>"GB"}]}}, {:$project=>{:_id=>1}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.17601s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$match=>{:$and=>[{:"address_components.types"=>"country"}, {:"address_components.short_name"=>"GB"}]}}, {:$project=>{:_id=>1}}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.001s

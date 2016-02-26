@@ -98,4 +98,13 @@ class Place
     view=view.aggregate(pipeline)
     view.to_a.map { |h| h[:_id] }
   end
+  def self.find_ids_by_country_code country_code
+    view=self.get_address_components.view
+    
+    pipeline = []
+    pipeline << {:$match=>{:$and=>[{:"address_components.types"=>"country"},{:"address_components.short_name"=>country_code}]}}
+    pipeline << {:$project=>{:_id=>1}}
+    view=view.collection.find.aggregate(pipeline)
+    view.to_a.map { |h| h[:_id].to_s }
+  end
 end
