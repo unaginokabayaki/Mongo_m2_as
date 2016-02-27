@@ -33,11 +33,8 @@ class Place
     @formatted_address = keys[:formatted_address]
 
     geoloc = keys[:geometry].nil? ? nil : keys[:geometry][:geolocation]
-<<<<<<< HEAD
     @location = Point.new(geoloc)
-=======
-    @location = geoloc.nil? ? nil : Point.new(geoloc) 
->>>>>>> d25f76509dad2a3256132d455bd09b0b2c9114ac
+    #@location = geoloc.nil? ? nil : Point.new(geoloc) 
   end
 
   def self.find_by_short_name short_name
@@ -120,7 +117,11 @@ class Place
     self.collection.indexes.drop_one("geometry.geolocation_2dsphere")
   end
   def self.near(point, max_meters=:unlimited)
-    places=[]
-     
+    geo_query={}
+    geo_query[:$geometry]=point.to_hash
+    geo_query[:$maxDistance]=max_meters if max_meters!=:unlimited
+    view=self.collection.find(:"geometry.geolocation"=>{:$near=>geo_query})
+    #Pointで返す
+    view.to_a.each {|pt| Point.new(pt)}
   end
 end

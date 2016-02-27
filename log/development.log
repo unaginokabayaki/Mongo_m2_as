@@ -95,3 +95,59 @@ MONGODB | localhost:27017 | places_development.createIndexes | STARTED | {"creat
 MONGODB | localhost:27017 | places_development.createIndexes | SUCCEEDED | 0.567033s
 MONGODB | localhost:27017 | places_development.listIndexes | STARTED | {"listIndexes"=>"places", "cursor"=>{}}
 MONGODB | localhost:27017 | places_development.listIndexes | SUCCEEDED | 0.060004s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>1, :formatted_address=>1, :"geometry.geolocation"=>1}}, {:$skip=>0}, {:$limit=>2}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.004s
+MONGODB | localhost:27017 | places_development.aggregate | STARTED | {"aggregate"=>"places", "pipeline"=>[{:$unwind=>"$address_components"}, {:$project=>{:address_components=>1, :formatted_address=>1, :"geometry.geolocation"=>1}}, {:$skip=>0}, {:$limit=>2}], "cursor"=>{}}
+MONGODB | localhost:27017 | places_development.aggregate | SUCCEEDED | 0.006s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"PA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>#<Point:0x77cfd78 @latitude=39.874572, @longitude=-75.56709699999999>}}}}
+MONGODB | localhost:27017 | places_development.find | FAILED | undefined method `bson_type' for #<Point:0x77cfd78> | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"PA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"PA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"BA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"BA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"BA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"PA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"BA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"PA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"address_components.short_name"=>"PA"}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>#<Point:0x6a9b9f0 @latitude=39.874572, @longitude=-75.56709699999999>}}}}
+MONGODB | localhost:27017 | places_development.find | FAILED | undefined method `bson_type' for #<Point:0x6a9b9f0> | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>#<Point:0x6a9b9f0 @latitude=39.874572, @longitude=-75.56709699999999>}}}}
+MONGODB | localhost:27017 | places_development.find | FAILED | undefined method `bson_type' for #<Point:0x6a9b9f0> | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}}}}}
+MONGODB | localhost:27017 | places_development.find | FAILED | error processing query: ns=places_development.placesTree: GEONEAR  field=geometry.geolocation maxdist=1.79769e+308 isNearSphere=0
+Sort: {}
+Proj: {}
+ planner returned error: unable to find index for $geoNear query (2) | 0.019001s
+MONGODB | localhost:27017 | places_development.createIndexes | STARTED | {"createIndexes"=>"places", "indexes"=>[{:key=>{:"geometry.geolocation"=>"2dsphere"}, :name=>"geometry.geolocation_2dsphere"}]}
+MONGODB | localhost:27017 | places_development.createIndexes | SUCCEEDED | 0.045003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.052003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.030002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.071004s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}, :$maxDistance=>16094.0}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.019001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}, :$maxDistance=>16094.0}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.018001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}, :$maxDistance=>16094.0}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.018001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}, :$maxDistance=>16094.0}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.017001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}, :$maxDistance=>16094.0}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.017001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56709699999999, 39.874572]}, :$maxDistance=>16094.0}}}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.018001s
