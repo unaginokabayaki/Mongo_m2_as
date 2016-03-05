@@ -120,8 +120,13 @@ class Place
     geo_query={}
     geo_query[:$geometry]=point.to_hash
     geo_query[:$maxDistance]=max_meters if max_meters!=:unlimited
-    view=self.collection.find(:"geometry.geolocation"=>{:$near=>geo_query})
+    self.collection.find(:"geometry.geolocation"=>{:$near=>geo_query})
     #Pointで返す
-    view.to_a.each {|pt| Point.new(pt)}
+    #view.to_a.each {|pt| Point.new(pt)}
   end
+  def near(max_meters=:unlimited)
+    view=self.class.near(@location, max_meters)
+    self.class.to_places(view)
+  end
+
 end
